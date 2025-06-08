@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Character encoding for document-->
     <meta charset="UTF-8">
-    <meta name="author" content="Weather API Project">
-    <title>My API Project: Weather </title>
-    <!-- Link to CSS stylesheet -->
+    <!--Author of document-->
+    <meta name="author" content="Jayuya Weather API Project">
+   <!--Title of document, displayed in browser tab-->
+    <title>Jayuya, Puerto Rico Weather API</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="css/index.css">
+    <!--Ensures page is responsive and scales properly on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Weather API Project</h1>
+    <!--Main heading of page-->
+    <h1>Jayuya, Puerto Rico Weather API Project</h1>
 
-    
+    <!--Navigation section with buttons to fetch weather data-->
+    <nav>
+        <!--Button to fetch and display current weather data-->
+        <button id="fetchCurrentWeather">Current Weather</button>
+        <!--Button to fetch and display weather forecast data-->
+        <button id="fetchForecast">Weather Forecast</button>
+    </nav>
+
+    <!--Container where the fetched weather data will be displayed-->
+    <div class="data-container" id="dataContainer">
+        <!-- Weather data will be displayed here -->
+    </div>
+
+
+    <!--Link to external JavaScript file for handling data fetching and display -->
     <script src="js/index.js"></script>
 </body>
 </html>
